@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBI Classification 5</title>
+    <style>
+        /* Force the page to be full screen with no scrollbars */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #001f3f; /* Deep, intense blue screen */
+            font-family: 'Courier New', Courier, monospace; /* Computer terminal font */
+            color: #000000; /* Pitch black text */
+            display: flex;
+            box-sizing: border-box;
+            overflow: hidden; /* Keeps scrollbars hidden for the locked effect */
+        }
+
+        /* Container split: 65% left text, 35% right logo */
+        .main-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            padding: 2% 5%; /* Reduced padding to give text more breathing room */
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Left Side Text Content */
+        .text-section {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Title Style */
+        h1 {
+            font-size: 3rem; /* Slightly smaller to guarantee screen fit */
+            margin: 0 0 15px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+        }
+
+        /* Description Paragraphs */
+        .description {
+            font-size: 1.25rem; /* Resized to fit screen height */
+            line-height: 1.6;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Red Redacted/Warning Highlight */
+        .redacted {
+            color: #ff3333; 
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(255, 51, 51, 0.5);
+        }
+
+        /* Signature Line */
+        .signature {
+            font-size: 1.1rem;
+            font-style: italic;
+            border-top: 2px solid #000000;
+            padding-top: 5px;
+            display: inline-block;
+            margin-bottom: 20px; 
+            width: fit-content;
+        }
+
+        /* Secondary classification threat block */
+        .sub-warning {
+            font-size: 1.05rem; /* Resized to fit screen height */
+            line-height: 1.5;
+            font-weight: bold;
+            border-left: 4px solid #000000; 
+            padding-left: 15px;
+        }
+
+        /* Right Side FBI Logo Container */
+        .logo-section {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* FBI Seal Image formatting */
+        .logo-section img {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.6));
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Text layout on the left -->
+        <div class="text-section">
+            <h1>Paranoia.exe</h1>
+            
+            <div class="description">
+                This entity is not removable, once it enters your computer it will not wish to leave. 
+                This entity roams the very few corners of technology. The system will be in trouble. 
+                The entity is contained for now. But this will not last long. He told me to keep it 
+                contained, but it escaped multiple times. It's only weakness is it's 
+                <span class="redacted">[REDACTED]</span>.
+            </div>
+            
+            <div class="signature">
+                -Ken (Deputy Directive)
+            </div>
+
+            <!-- New classification warning paragraph -->
+            <div class="sub-warning">
+                If you are looking at this text and you do not have the classification 5 badge, 
+                then you are already under the control of the FBI and CIA. You're IP Address is 
+                already recorded and so is your gmail. There wont be an escape if your a pedestrian. 
+                This is classification 5, this cannot be shown to anyone. You will be 
+                <span class="redacted">executed</span> soon. Await your peace.
+            </div>
+        </div>
+
+        <!-- Official FBI Seal hosted on Govt Servers on the right -->
+        <div class="logo-section">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Seal_of_the_Federal_Bureau_of_Investigation.svg" alt="FBI Seal">
+        </div>
+    </div>
+
+</body>
+</html>
